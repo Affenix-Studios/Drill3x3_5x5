@@ -1,0 +1,21 @@
+name: Drill_3x3_and_5x5
+version: '1.0'
+main: io.sniperjohnny.github.drill_3x3_and_5x5.Drill_3x3_and_5x5
+api-version: '1.21'
+authors: [ SniperJohnny ]
+commands:
+  3x3recipe:
+    description: Zeigt das rezept für 3x3 Bohrer
+    aliases:
+      - 3x3
+      - 3x3_bohrer
+  5x5recipe:
+    description: Zeigt das Rezept für den 5x5 Bohrer
+    aliases:
+      - 5x5
+      - 5x5_bohrer
+  opci:
+    permission: "drill_itemgiver"
+    description: gibt dem user sofort das gewünschte item
+    aliases:
+      - opcustomitem
