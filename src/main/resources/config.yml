@@ -1,0 +1,33 @@
+texturepack:
+  wanted: false
+  url: "https://download.mc-packs.net/pack/e11ab1b2edfaf8f98b880b6b9a728284bbc23f45.zip"
+  id: "0f84cb23-bcfb-4216-bbef-32c3db852c16"
+
+tntpickaxe:
+  chance: 10
+
+scythe:
+  soul-chance: 2
+  soul-harvest-bonus: 3
+
+timberaxe:
+  cooldown-seconds: 10
+  max-tree-logs: 100
+
+soulsshop:
+  tntpickaxe:
+    fortune: 25
+    silktouch: 25
+    unbreakable: 40
+  timberaxe:
+    remove-cooldown: 30
+    efficiency: 15
+    fortune: 20
+    silktouch: 20
+  scythe:
+    efficiency: 15
+    looting: 20
+    soul-harvest: 50
+    sharpness: 20
+  murasame:
+    crafting-unlock: 100

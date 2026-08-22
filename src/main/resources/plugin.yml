@@ -1,21 +1,66 @@
-name: Drill_3x3_and_5x5
-version: '1.0'
-main: io.sniperjohnny.github.drill_3x3_and_5x5.Drill_3x3_and_5x5
+name: SoulForge
+version: '2.0'
+main: io.sniperjohnny.github.soulforge.SoulForge
 api-version: '1.21'
 authors: [ SniperJohnny ]
 commands:
   3x3recipe:
-    description: Zeigt das rezept für 3x3 Bohrer
+    description: shows the recipe for the 3x3 drill
+    usage: "/3x3recipe"
     aliases:
       - 3x3
-      - 3x3_bohrer
+      - 3x3_drill
   5x5recipe:
-    description: Zeigt das Rezept für den 5x5 Bohrer
+    description: shows the recipe for the 5x5 drill
+    usage: "/5x5recipe"
     aliases:
       - 5x5
-      - 5x5_bohrer
+      - 5x5_drill
   opci:
     permission: "drill_itemgiver"
-    description: gibt dem user sofort das gewünschte item
+    description: gives the user the wanted item instantly
+    usage: "/opci give/remove <player> <item>"
     aliases:
       - opcustomitem
+  recipe:
+    description: shows all recipes or opens the search dialog with a search term
+    usage: "/recipe [search]"
+    aliases:
+      - recipes
+  tntrecipe:
+    description: shows the recipe for the TNT Pickaxe
+    usage: "/tntrecipe"
+    aliases:
+      - tnt
+  silktouch:
+    description: Applies Silk Touch to all drills in your inventory
+    usage: "/silktouch"
+    aliases:
+      - silk
+  fortune:
+    description: Applies Fortune to all drills in your inventory
+    usage: "/fortune"
+    aliases:
+      - fort
+  souls:
+    description: Shows your current souls. Use /souls <player> to view another player's souls (requires souls.seeothers)
+    usage: "/souls [player]"
+  soulsshop:
+    description: Opens the soul shop where you can spend souls on upgrades
+    usage: "/soulsshop"
+    aliases:
+      - soulshop
+  givesouls:
+    permission: "givesouls"
+    description: Gives souls to a player
+    usage: "/givesouls <player> <amount>"
+  soulsgive:
+    description: Gives some of your souls to another player
+    usage: "/soulsgive <player> <amount>"
+permissions:
+  souls.seeothers:
+    description: Allows you to see the souls of other players
+    default: op
+  givesouls:
+    description: Allows you to give souls to players
+    default: op
